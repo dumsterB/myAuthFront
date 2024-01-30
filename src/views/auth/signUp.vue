@@ -126,6 +126,7 @@ const ConfirmCodeByEmail = async () => {
     loadingEmail.value = false
   }, 1000)
 }
+
 const ConfirmCodeByPhone = async () => {
   loadingPhone.value = true
   await authModule.sendConfirmCode({phone: ruleForm.phone})
@@ -148,12 +149,10 @@ const submitForm = (formEl: FormInstance | undefined) => {
       }
       try {
         const res = await authModule.register(data)
-        console.log(res)
       } catch (error) {
         console.log(error)
       }
       loading.value = false
-      /*      router.push('/signIn')*/
 
     } else {
       console.log("error submit!");
