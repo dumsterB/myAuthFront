@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dumster/auth_module": "^1.0.9",
+    "@dumster/auth_module": "^1.1.5",
     "element-plus": "^2.5.3",
+    "js-cookie": "^3.0.5",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   },

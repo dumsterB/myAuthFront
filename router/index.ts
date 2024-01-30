@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/signUp',
         name: 'SignUp',
         component: () => import("../src/views/auth/signUp.vue")
+    },
+    {
+        path: '/user',
+        name: 'User',
+        component: () => import("../src/views/user/index.vue")
     }
 ]
 const router = createRouter({
